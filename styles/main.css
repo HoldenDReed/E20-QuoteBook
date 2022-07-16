@@ -1,0 +1,12 @@
+.quoteBlocks{
+    display: flex;
+    flex-wrap: wrap;
+}
+.singleQuote{
+    width: 200px;
+    margin: 10px;
+    background-color: blanchedalmond;
+    border: 1px purple solid;
+    border-radius: 2%;
+    padding: 10px 20px;
+}
