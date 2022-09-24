@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    ><link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <h1>Quote Book</h1>
+    <div id="quotesHeader"></div>
+    <div id="authorsList"></div>
 <article>
     <section class="quoteBlockForm">
-        <input type="text" placeholder="quote">
-        <input type="text" placeholder="author">
-        <button>Submit New Quote</button>
+        <input type="text" id="quoteText" placeholder="quote">
+        <input type="text" id="authorText" placeholder="author">
+    <div>
+        <p>Is Author Alive</p>
+        <input type="radio" id="aliveTrue" name="alive" value="true"/>
+        <label for="aliveTrue">Yes</label>
+        <input type="radio" id="aliveFalse" name="alive" value="false"/>
+        <label for="aliveTrue">No</label>
+        </section>
+    </div>
+
+        <button id="submitNewQuote">Submit New Quote</button>
     </section>
-    <section class="quoteBlocks">
-    <p class="singleQuote">"You can totally do this." </p>
-    <p class="singleQuote">"Don’t tell people your plans. Show them your results." </p>
-    <p class="singleQuote">"No pressure, no diamonds. Thomas Carlyle." </p>
-    <p class="singleQuote">"We can do anything we want to if we stick to it long enough." </p>
+    <section class="quoteBlocks" id = "quotes">
     </section>
 </article>
+<script type= "module" src="main.js"></script>
  </body>
 </html>
